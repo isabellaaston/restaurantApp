@@ -1,0 +1,25 @@
+@startuml classes
+class Restaurant {
+   id Integer 
+   name String
+   menus Array<menu>
+   ---
+   addMenu(<menu>)
+}
+class Menu {
+    id Integer
+    title String
+    items Array<item>
+    ---
+    addItem(<item>)
+}
+class Item {
+    id Integer
+    description String
+    price Number
+}
+
+Restaurant --{ Menu
+Menu --{Item
+
+@enduml

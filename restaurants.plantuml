@@ -3,8 +3,9 @@ class Restaurant {
    id Integer 
    name String
    menus Array<menu>
-   ---
+   ---   
    addMenu(<menu>)
+   removeMenu(<menu>)
 }
 class Menu {
     id Integer
@@ -12,14 +13,19 @@ class Menu {
     items Array<item>
     ---
     addItem(<item>)
+    deleteItem(<item>)
+
 }
 class Item {
     id Integer
     description String
     price Number
+    ---
+    createItem(description, price)
+    deleteItem(<item>)
 }
 
-Restaurant --{ Menu
-Menu --{Item
+Restaurant --{ Menu 
+Menu --{ Item
 
 @enduml

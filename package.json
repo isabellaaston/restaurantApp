@@ -1,0 +1,23 @@
+{
+  "name": "restaurantsapp",
+  "version": "1.0.0",
+  "description": "![Classes Diagram](https://user-images.githubusercontent.com/57452017/95737662-f5d9be80-0c7f-11eb-8f33-fb00d3fc8a19.png)",
+  "main": "Item.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "test:report": "jest --coverage=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabellaaston/restaurantApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabellaaston/restaurantApp/issues"
+  },
+  "homepage": "https://github.com/isabellaaston/restaurantApp#readme",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
